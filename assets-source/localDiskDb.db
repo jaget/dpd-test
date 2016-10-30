@@ -1,0 +1,78 @@
+{
+  "data": {
+    "user": [
+      {
+        "name": "person 1",
+        "username": "per1",
+        "email": "person@site.com",
+        "id": 1
+      }
+    ],
+    "post": [
+        {
+            "id": 1,
+            "userId": 1,
+            "name": "post 1",
+            "text": "lorem ipsum"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "name": "post 2",
+            "text": "lorem ipsum 2"
+        }
+    ],
+    "comment": [
+        {
+            "id": 1,
+            "postId": 1,
+            "userId": 1,
+            "text": "lorem ipsum"
+        },
+        {
+            "id": 2,
+            "postId": 2,
+            "userId": 1,
+            "text": "lorem ipsum 2"
+        }
+    ]
+  },
+  "schema": {
+    "user": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "post": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 1
+    },
+    "post": {
+      "id": 1
+    }
+  }
+}

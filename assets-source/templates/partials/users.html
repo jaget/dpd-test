@@ -1,0 +1,21 @@
+<h1>Users</h1>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>username</th>
+            <th>email</th>
+            <td>posts</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+            <td><a ui-sref="userPosts({ userId: user.id })">See {{ user.username }}'s posts.</a></td>
+        </tr>
+    </tbody>
+</table>

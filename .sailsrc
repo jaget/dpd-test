@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "grunt": false,
+    "coffee": false
+  },
+  "generators": {
+    "modules": {}
+  }
+}
